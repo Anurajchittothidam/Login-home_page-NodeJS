@@ -1,0 +1,26 @@
+<%- include('./partials/header')%>
+
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th list="col">No</th>
+                <th list="col">model</th>
+                <th list="col">version</th>
+                <th list="col">Discription</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% table.forEach(table=>{%>
+                    <tr>
+                        <td><%= table.number %></td>
+                        <td><%= table.model %></td>
+                        <td><%= table.version %> </td>
+                        <td><%= table.description %></td>
+                    </tr>
+                <%})%>
+            </tbody>
+          </table>
+    </div>
+</div>

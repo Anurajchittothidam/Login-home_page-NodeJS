@@ -1,0 +1,17 @@
+<%- include('./partials/header')%>
+
+
+<div class="container">
+    <div class="row justify-content-center  mt-5">
+        <% cards.forEach(cards=>{%>
+            <div class="card col-md-3" style="width: 18rem;">
+                <img src="<%=cards.image%>" style="height: 200px;width: 287px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= cards.name%></h5>
+                    <p class="card-text"><%= cards.description%></p>
+                    <a href="#" class="btn btn-primary">Take ride</a>
+                </div>
+            </div>
+        <%})%>
+    </div>
+</div>

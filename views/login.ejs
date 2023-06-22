@@ -1,0 +1,67 @@
+<section >
+    <div class="container">
+      <div class="row" style="padding-top: 5rem;">
+        <div class="col-md-6">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Sample image">
+        </div>
+        
+        <div class="col-md-6 pt-5" >
+          
+          
+            <form action="/login" onsubmit="return submitform(event)" method="post"  id="form" >
+             <div id="error">
+              <% if (error){%>
+                  <div class="alert alert-danger d-flex justify-content-between" role="alert"><%= error %>
+                      <div class="close text-dark fs-4" style="cursor:pointer" onclick="hideErrorMsg()">X</div>
+                  </div>
+              <%}%>
+          </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label pt-3 pl-3 " for="username"><h5>User Name</h5></label>
+              <input type="text" id="username" class="user_class form-control form-control-lg"
+                placeholder="Enter a valid user name" name="username" />
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <label class="form-label pt-3 pl-3 " for="password"> <h5> Password</h5></label>
+              <input type="password" id="password" class="form-control form-control-lg"
+                placeholder="Enter password" name="password" />
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="showPassword" />
+                <label class="form-check-label" for="form2Example3">
+                 <h5> Show password</h5>
+                </label>
+              </div>
+            
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="submit" class="btn btn-primary btn-lg" 
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" >Login</button>
+  
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div
+    class="d-flex  justify-content-center px-4 bg-white" style="padding-top: 7rem;">
+    <!-- Copyright -->
+    <div class="text-black mb-5" >
+      Copyright © 2020. All rights reserved.
+    </div> 
+    </div>
+  </footer>
+    <script src="/javascript/loginValidation.js">
+  
+    </script>
