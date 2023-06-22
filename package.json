@@ -1,7 +1,6 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +18,7 @@
     "express-session": "^1.17.3",
     "mongoose": "^6.9.1",
     "nodemon": "^2.0.20"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
